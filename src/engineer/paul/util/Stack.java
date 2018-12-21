@@ -37,6 +37,33 @@ public class Stack {
     }
 
     /**
+     * @return returns the element at the top of the stack or NULL if the stack is empty
+     */
+    public String peek() {
+        if (!isEmpty())
+            return this.stack[currentPosition-1];
+
+        return null;
+    }
+
+    /**
+     * @return returns the size of the stack
+     */
+    public int size() {
+        return this.stack.length;
+    }
+
+    /**
+     * @return return true is the stack is empty or false is the stack is not empty
+     */
+    public boolean isEmpty() {
+        if (this.currentPosition == 0 && this.stack[currentPosition] == null)
+            return true;
+        else
+            return false;
+    }
+
+    /**
      * Creates a new Stack twice the currentPosition of the previous Stack. Copies all data from the previous Stack to the new
      * Stack and replaces the old one.
      */

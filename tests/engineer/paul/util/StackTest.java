@@ -51,6 +51,8 @@ class StackTest {
         stack.push("nine");
         stack.push("ten");
         stack.push("eleven");
+
+        assertEquals(20, stack.size());
     }
 
 }
