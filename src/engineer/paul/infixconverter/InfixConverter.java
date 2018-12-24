@@ -36,6 +36,9 @@ public class InfixConverter {
      * @return an expression where operators come after corresponding operands
      */
     public static String toPostFix(String infixExpression) {
+        infixExpression = infixExpression.replaceAll("\\(", "( ")
+                                         .replaceAll("\\)", " )");
+
         Stack opStack = new Stack();
         String[] infixInput = infixExpression.split(" ");
         StringJoiner postFixOutput = new StringJoiner(" ");
