@@ -1,4 +1,4 @@
-package engineer.paul.infixconverter;
+package engineer.paul.rpn;
 
 import engineer.paul.util.Stack;
 
@@ -36,6 +36,8 @@ public class InfixConverter {
      * @return an expression where operators come after corresponding operands
      */
     public static String toPostFix(String infixExpression) {
+
+        // TODO: Remove redundant expression parsing code, perhaps into a utility class
         infixExpression = infixExpression.replaceAll("\\(", "( ")
                                          .replaceAll("\\)", " )");
 

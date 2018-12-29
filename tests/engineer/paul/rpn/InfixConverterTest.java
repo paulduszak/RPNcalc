@@ -1,6 +1,6 @@
-package engineer.paul.infixconverter;
+package engineer.paul.rpn;
 
-import org.junit.jupiter.api.BeforeEach;
+import engineer.paul.rpn.InfixConverter;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
